@@ -69,7 +69,7 @@ li {
 }
 
 input[type="checkbox"] {
-  appearance: none; /* remove default browser style */
+  appearance: none; 
   width: 20px;
   height: 20px;
   border: 2px solid #007bff;
@@ -78,12 +78,12 @@ input[type="checkbox"] {
   position: relative;
   transition: all 0.2s ease;
 }
-/* Checked state — blue filled circle */
+
 input[type="checkbox"]:checked {
   background-color: #007bff;
   border-color: #007bff;
 }
-/* Add a white check mark inside when checked */
+
 input[type="checkbox"]:checked::after {
   content: "✓";
   color: white;
@@ -93,7 +93,7 @@ input[type="checkbox"]:checked::after {
   left: 50%;
   transform: translate(-50%, -55%);
 }
-/* Small spacing between checkbox and text */
+
 li span {
   margin-left: 10px;
 }
@@ -117,19 +117,7 @@ li button:hover {
   color: #555;
   font-weight: 500;
 }
-.visibility {
-  display: flex;
-  gap: 10px;
-}
-.visibility span a {
-  text-decoration: none;
 
-  color: black;
-}
-.visibility span a.active {
-  text-decoration: none;
-  color: blue;
-}
 
 @media (max-width: 470px) {
   .todo-app {
@@ -143,3 +131,4 @@ li button:hover {
     gap: 20px;
   }
 }
+
